@@ -13,13 +13,13 @@
   <main>
     <h1>How many rounds?</h1>
     <form action="" id="form">
-      <input type="radio" name="guessNumber" id="fünf" value="5" checked>
+      <input type="radio" name="guessNumber" id="fünf" value="5" checked onchange="play(event)">
       <label for="fünf">5</label>
-      <input type="radio" name="guessNumber" value="10" id="zehn">
+      <input type="radio" name="guessNumber" value="10" id="zehn" onchange="play(event)">
       <label for="zehn">10</label><br>
-      <input type="radio" name="guessNumber" value="15" id="fünfzehn">
+      <input type="radio" name="guessNumber" value="15" id="fünfzehn" onchange="play(event)">
       <label for="fünfzehn">15</label>
-      <input type="radio" name="guessNumber" value="20" id="zwanzig">
+      <input type="radio" name="guessNumber" value="20" id="zwanzig" onchange="play(event)">
       <label for="zwanzig">20</label><br>
     </form>
     <h2 id="h2"><span id="versuch">1</span>/<span id="versuchLimit">5</span></h2>
