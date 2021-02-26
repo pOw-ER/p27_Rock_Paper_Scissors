@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Pape Scissors Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main>
+    <h1>How many rounds?</h1>
+    <form action="" id="form">
+      <input type="radio" name="guessNumber" id="fünf" value="5" checked>
+      <label for="fünf">5</label>
+      <input type="radio" name="guessNumber" value="10" id="zehn">
+      <label for="zehn">10</label><br>
+      <input type="radio" name="guessNumber" value="15" id="fünfzehn">
+      <label for="fünfzehn">15</label>
+      <input type="radio" name="guessNumber" value="20" id="zwanzig">
+      <label for="zwanzig">20</label><br>
+    </form>
+    <h2 id="h2"><span id="versuch">1</span>/<span id="versuchLimit">5</span></h2>
+  </main>
+  <section id="score">
+    <h3>User</h3>
+    <div>
+      <p><span id="userScore">0</span>:<span id="compScore">0</span></p>
+    </div>
+    <h3>COMP</h3>
+  </section>
+  <section id="result">
+    <p id="resultParag">Let's Play</p>
+  </section>
+  <section id="rpsImg">
+    <div id="rck" onclick="play(event)"><img id="rock" src="assets/img/rock.png" alt=""></div>
+    <div id="ppr" onclick="play(event)"><img id="paper" src="assets/img/paper.png" alt=""></div>
+    <div id="scrs" onclick="play(event)"><img id="scissors" src="assets/img/scissors.png" alt=""></div>
+  </section>
+  <h2>MAKE YOUR MOVE.</h2>
+  <h4><a href="">restart</a></h4>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
